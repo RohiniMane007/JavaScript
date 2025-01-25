@@ -29,4 +29,6 @@ console.log(str.trim());
 
 console.log(str.replace('World','ding'));
 
+console.log(str.split(' '));
+
 
