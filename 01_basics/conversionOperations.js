@@ -38,3 +38,16 @@ let str3 = str1+str2
 console.log(str3);
 console.log(true + true);
 console.log(false + false);
+
+console.log("1"+1);
+console.log(1+"1"+1);
+
+console.log(1+4*1/2);
+console.log(+true);
+console.log(+"");
+console.log(+false);
+// console.log();
+let counter = 10
+++counter;
+// counter++;
+console.log(counter);
