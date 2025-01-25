@@ -33,3 +33,7 @@ console.log(typeof days);
 console.log(typeof obj);
 console.log(typeof myFun);
 
+//=============================//
+
+// Memory 
+//stack(primitive) heap(non-primitive)
