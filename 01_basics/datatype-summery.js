@@ -36,4 +36,27 @@ console.log(typeof myFun);
 //=============================//
 
 // Memory 
-//stack(primitive) heap(non-primitive)
+//stack(primitive) 
+
+
+let firstname = "rohini"
+let fname =  firstname 
+
+console.table([firstname, fname]);
+
+fname = "jack"
+
+console.table([firstname,fname]);
+
+//heap(non-primitive)
+
+let user = {
+    email : "user@g.co",
+    pass : "123"
+}
+
+let userTwo = user
+
+userTwo.pass = "asd"
+
+console.table([user,userTwo]);
