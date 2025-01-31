@@ -31,6 +31,19 @@ const obj3 = {...obj1,...obj2};
 // console.log(obj3);
 
 
-console.log(Object.keys(temp));
-console.log(Object.values(temp));
-console.log(temp);
+// console.log(Object.keys(temp));
+// console.log(Object.values(temp));
+// console.log(Object.entries(temp));
+
+const course = {
+    coursename : "javascript",
+    price : 1000,
+    instructor: "code"
+}
+
+// const {instructor} = course
+const {instructor: ins} = course
+// console.log(course.instructor);
+console.log(ins);
+// console.log(instructor);
+
