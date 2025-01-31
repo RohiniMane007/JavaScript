@@ -23,8 +23,14 @@ function addNum(num1, num2){
 const result = addNum(5,3)
 console.log(result);
 
-function msgView(user){
+function msgView(user='aaa'){
+    if(!user){
+        console.log("undefined");
+        return
+    }
     return `Hello ${user}`
 }
 
 console.log(msgView('Rohini'))
+console.log(msgView('fe')) // 
+console.log(msgView()) //undefined
