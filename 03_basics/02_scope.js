@@ -44,13 +44,13 @@ function add(num){
     return num+1
 }
 
-add(5)
+// add(5)
 console.log(add(5));
 
+
+// console.log(addtwo(7))
 const addtwo = function(num){
     return num +2
 }
 
 // addtwo(7)
-
-// console.log(addtwo(7))
