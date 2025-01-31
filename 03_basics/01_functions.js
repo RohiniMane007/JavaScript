@@ -21,3 +21,10 @@ function addNum(num1, num2){
 }
 
 const result = addNum(5,3)
+console.log(result);
+
+function msgView(user){
+    return `Hello ${user}`
+}
+
+console.log(msgView('Rohini'))
