@@ -41,4 +41,14 @@ function viewObj(anyObject){
     return `my id is ${anyObject.id} and ${anyObject.name}`
 }
 
-console.log(viewObj(user))
+// console.log(viewObj(user))
+// console.log(viewObj({id:"rohi",name:"123"}))
+
+const myArray = [20,30,40,50]
+
+function getArray(arr){
+    return arr[1];
+}
+
+// console.log(getArray(myArray));
+console.log(getArray(["aa","ss","dd","ff"]));
