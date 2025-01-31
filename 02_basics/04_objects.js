@@ -28,5 +28,9 @@ const obj2 = { 3: "c", 4: "d" }
 // console.log(obj3);
 
 const obj3 = {...obj1,...obj2};
-console.log(obj3);
+// console.log(obj3);
 
+
+console.log(Object.keys(temp));
+console.log(Object.values(temp));
+console.log(temp);
