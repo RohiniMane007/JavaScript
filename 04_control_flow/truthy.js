@@ -38,7 +38,13 @@ let val;
 // val = 5 ?? 10;
 // val = null ?? 10;
 // val = undefined ?? 15;
-
-
 val = null ?? 10 ?? 20;
 console.log(val);
+
+// Terniary Operator
+//condition : true ? false
+
+const value = 60;
+value <= 50 ? console.log("true val") : console.log("false val");
+
+
