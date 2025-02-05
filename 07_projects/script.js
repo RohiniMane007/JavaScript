@@ -1,19 +1,26 @@
-const red = document.querySelector(".red")
-const cyan = document.querySelector(".cyan")
-const violet = document.querySelector(".violet")
-const orange = document.querySelector(".red")
-const pink = document.querySelector(".pink")
-
-const center = document.querySelector(".center")
-
-// console.log(window.getComputedStyle().backgroundColor);
 
 
-// const getBGColor = (selectedElement) => {
-//     return window.getComputedStyle(selectedElement).backgroundColor;
-// }
-// var orangeElementColor = getBGColor(orange);
+const buttons = document.querySelectorAll('.button');
+const body = document.querySelector('body');
+console.log(buttons);
 
-// orange.addEventListener('mouseenter',()=>{
-//     center.style.background = orangeElementColor
-// })
+buttons.forEach((button)=>{
+    // console.log(button)
+    button.addEventListener('click',function(e){
+        // console.log(e);
+        // console.log(e.target);
+       if (e.target.id === 'grey') {
+        console.log(e.target.id);
+        body.style.backgroundColor = e.target.id
+       } else if (e.target.id === 'white') {
+        console.log(e.target.id);
+        body.style.backgroundColor = e.target.id
+       } else if (e.target.id === 'purple') {
+        console.log(e.target.id);
+        body.style.backgroundColor = e.target.id
+       } else if (e.target.id === 'plum') {
+        console.log(e.target.id);
+        body.style.backgroundColor = e.target.id
+       } 
+    })
+});
