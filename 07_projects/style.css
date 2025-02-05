@@ -13,22 +13,32 @@ html {
   
   .button {
     width: 100px;
-    height: 100px;
+    height: 40px;
     border: solid black 2px;
     display: inline-block;
   }
   
-  #grey {
-    background: grey;
+  #violet {
+    background: violet;
   }
   
-  #white {
-    background: white;
+  #indigo {
+    background: indigo;
   }
-  #purple {
-    background: purple;
+  #blue {
+    background: blue;
   }
-  #plum {
-    background: plum;
+  #green {
+    background: green;
+  }
+
+  #yellow {
+    background: yellow;
   }
   
+  #orange {
+    background: orange;
+  }
+  #red {
+    background: red;
+  }
