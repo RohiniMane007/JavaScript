@@ -1,18 +1,79 @@
 <!DOCTYPE html>
 <html>
+<style>
+    .div{
+        width: 150px;
+        height: 50px;
+    }
+</style>
 <head>
     <meta charset="UTF-8" />
     <title>Html Elements</title>
 </head>
+
 <body>
     <h2> Image</h2>
-    <ul>
-        <li>image 1</li>
-        <li>image 2</li>
-        <li>image 3</li>
-        <li>image 4</li>
-        <li>image 5</li>
-        <li>image 6</li>
+    <ul id="images">
+        <li>
+            <div id="img1" class="div" style="color: aqua;">image 1 </div>
+        </li>
+        <li>
+            <div id="img2" class="div" style="color: blueviolet;">image 2 </div>
+        </li>
+        <li>
+            <div id="img3" class="div" style="color: burlywood;">image 3 </div>
+        </li>
+        <li>
+            <div id="img4" class="div" style="color: chocolate;">image 4 </div>
+        </li>
+        <li>
+            <div id="img5" class="div" style="color: darkgreen;">image 5 </div>
+        </li>
+        <li>
+            <div id="img6" class="div" style="color: indianred;">image 6</div>
+        </li>
     </ul>
 </body>
+<script>
+    document.getElementById('img3').onclick = function () {
+        alert("image3 clicked")
+    }
+
+    document.getElementById('img1').addEventListener('click',function(){
+        alert('image1 clicked')
+    })
+
+   
+    // study
+    //type,timestamp, defaultPrevented
+    //target,toElement.srcElement
+    //clientX, clientY, screenX,screenY
+    //altkey. ctrlkey,shiftkey, keyCode
+  
+    document.getElementById('images').addEventListener('click',function(e){
+        // console.log('ul-------------------');
+        
+    },false)
+    document.getElementById('img3').addEventListener('click',function(e){
+        // console.log('img3=================');
+        e.stopPropagation()
+    },false)
+
+    document.getElementById('img6').addEventListener('click',function(e){
+        e.preventDefault()
+        // console.log('img6=================');
+    },false)
+
+    //-------------------------------//
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.tagName);
+        console.log(e.target.parentNode);
+        if (e.target.tagName === 'DIV') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()    
+        }
+    },false);
+</script>
 </html>
